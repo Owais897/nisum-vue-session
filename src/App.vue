@@ -3,21 +3,24 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <!-- <HandlingInputs /> -->
-    <Form />
+    <!-- <Form /> -->
+    <Parent />
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 // import HandlingInputs from "./components/handlingInputs.vue";
-import Form from "./components/Form.vue";
+// import Form from "./components/Form.vue";
+import Parent from "./components/Parent.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     // HandlingInputs,
-    Form,
+    // Form,
+    Parent,
   },
 };
 </script>
