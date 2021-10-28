@@ -4,7 +4,10 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <!-- <HandlingInputs /> -->
     <!-- <Form /> -->
-    <Parent />
+    <!-- <Parent /> -->
+    <Sibling1 />
+    <Sibling2 />
+    <Sibling3 />
   </div>
 </template>
 
@@ -12,7 +15,10 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import HandlingInputs from "./components/handlingInputs.vue";
 // import Form from "./components/Form.vue";
-import Parent from "./components/Parent.vue";
+// import Parent from "./components/Parent.vue";
+import Sibling1 from "./components/Sibling1.vue";
+import Sibling2 from "./components/Sibling2.vue";
+import Sibling3 from "./components/Sibling3.vue";
 
 export default {
   name: "App",
@@ -20,7 +26,10 @@ export default {
     // HelloWorld,
     // HandlingInputs,
     // Form,
-    Parent,
+    // Parent,
+    Sibling1,
+    Sibling2,
+    Sibling3,
   },
 };
 </script>
