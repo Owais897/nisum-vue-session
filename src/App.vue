@@ -5,9 +5,10 @@
     <!-- <HandlingInputs /> -->
     <!-- <Form /> -->
     <!-- <Parent /> -->
-    <Sibling1 />
+    <!-- <Sibling1 />
     <Sibling2 />
-    <Sibling3 />
+    <Sibling3 /> -->
+    <Slots />
   </div>
 </template>
 
@@ -16,9 +17,10 @@
 // import HandlingInputs from "./components/handlingInputs.vue";
 // import Form from "./components/Form.vue";
 // import Parent from "./components/Parent.vue";
-import Sibling1 from "./components/Sibling1.vue";
-import Sibling2 from "./components/Sibling2.vue";
-import Sibling3 from "./components/Sibling3.vue";
+// import Sibling1 from "./components/Sibling1.vue";
+// import Sibling2 from "./components/Sibling2.vue";
+// import Sibling3 from "./components/Sibling3.vue";
+import Slots from "./components/Slots.vue";
 
 export default {
   name: "App",
@@ -27,9 +29,10 @@ export default {
     // HandlingInputs,
     // Form,
     // Parent,
-    Sibling1,
-    Sibling2,
-    Sibling3,
+    // Sibling1,
+    // Sibling2,
+    // Sibling3,
+    Slots,
   },
 };
 </script>
