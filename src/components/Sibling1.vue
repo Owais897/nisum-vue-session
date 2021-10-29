@@ -19,6 +19,20 @@ export default {
       this.word = "";
     },
   },
+  watch: {
+    word(newValue, previous) {
+      console.log("newValue: ", newValue);
+      console.log("previous: ", previous);
+    },
+    // word: {
+    //   handler(newValue, previous) {
+    //     console.log("newValue: ", newValue);
+    //     console.log("previous: ", previous);
+    //   },
+    //   deep: true,
+    //   immediate: true,
+    // },
+  },
 };
 </script>
 

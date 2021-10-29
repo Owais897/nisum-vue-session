@@ -1,7 +1,7 @@
 <template
   ><div>
     SIBLING 3
-    {{ list.reverse() }}
+    {{ list }}
   </div>
 </template>
 
@@ -23,6 +23,15 @@ export default {
     this.$root.$on("updateWordList", (word) => {
       this.list.push(word);
     });
+  },
+  watch: {
+    list: {
+      handler(a, b) {
+        console.log("a: ", a);
+        console.log("b: ", b);
+      },
+      deep: true,
+    },
   },
 };
 </script>
