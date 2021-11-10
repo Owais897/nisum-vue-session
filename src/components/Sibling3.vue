@@ -2,6 +2,8 @@
   ><div>
     SIBLING 3
     {{ list }}
+    <br />
+    {{ obj }}
   </div>
 </template>
 
@@ -11,6 +13,12 @@ export default {
   data() {
     return {
       list: [],
+      obj: {
+        name: "owais",
+        age: {
+          value: 10,
+        },
+      },
     };
   },
   methods: {
@@ -23,9 +31,12 @@ export default {
     this.$root.$on("updateWordList", (word) => {
       this.list.push(word);
     });
+    setInterval(() => {
+      this.obj.age.value++;
+    }, 3000);
   },
   watch: {
-    list: {
+    obj: {
       handler(a, b) {
         console.log("a: ", a);
         console.log("b: ", b);
