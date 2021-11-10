@@ -1,6 +1,5 @@
 <template>
   <div>
-    scoped slot examples
     <br />
     <slot name="scoped" :user1="user1" :user2="user2"> {{ user1.name }}</slot>
   </div>
@@ -15,7 +14,7 @@ export default {
         name: "owais",
       },
       user2: {
-        name: "zain",
+        name: "muhammad owais",
       },
     };
   },

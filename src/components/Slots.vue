@@ -1,5 +1,8 @@
 <template>
   <div>
+    <h2>
+      slots are used to add things dynamically
+    </h2>
     <SlotE1> parentText </SlotE1>
     <SlotE1> <button>owais</button> </SlotE1>
     <SlotE1> <input type="text" /> </SlotE1>
@@ -16,6 +19,12 @@
         <h1>Here might be a page title</h1>
       </template>
     </SlotE2>
+    <h3>
+      scoped slot examples
+    </h3>
+    <SlotE3>
+      <template #scoped> </template>
+    </SlotE3>
     <SlotE3>
       <template #scoped="user">
         {{ user.user2.name }}

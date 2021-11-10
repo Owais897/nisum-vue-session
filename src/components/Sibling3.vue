@@ -42,6 +42,7 @@ export default {
         console.log("b: ", b);
       },
       deep: true,
+      immediate: true,
     },
   },
 };
