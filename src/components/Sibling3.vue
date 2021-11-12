@@ -21,12 +21,7 @@ export default {
       },
     };
   },
-  methods: {
-    updateList() {
-      this.$root.$emit("updateWordList", this.word);
-      this.word = "";
-    },
-  },
+
   created() {
     this.$root.$on("updateWordList", (word) => {
       this.list.push(word);
